@@ -1,5 +1,5 @@
 ---
-import icons from "../utils/icons.json"
+import { Icon } from 'astro-icon/components'
 const {name, url, description} = Astro.props
 
 ---
@@ -10,7 +10,7 @@ href={url}
 target="_blank"
 >
 <span class="inline-block rounded-lg bg-gray-50 p-3">
-  {lucide}
+  <Icon name={name} class="h-6 w-6" />
 </span>
 
 <h2 class="mt-2 font-bold">{name}</h2>
